@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F19BB142129BB5D0003D093 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19BB132129BB5D0003D093 /* MainCell.swift */; };
 		7F3E56C8212706C00035FCF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E56C7212706C00035FCF6 /* AppDelegate.swift */; };
-		7F3E56CA212706C00035FCF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E56C9212706C00035FCF6 /* ViewController.swift */; };
+		7F3E56CA212706C00035FCF6 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E56C9212706C00035FCF6 /* Main.swift */; };
 		7F3E56CD212706C00035FCF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3E56CB212706C00035FCF6 /* Main.storyboard */; };
 		7F3E56CF212706C10035FCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3E56CE212706C10035FCF6 /* Assets.xcassets */; };
 		7F3E56D2212706C10035FCF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3E56D0212706C10035FCF6 /* LaunchScreen.storyboard */; };
 		7F3E56DD212706C10035FCF6 /* JH_MemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E56DC212706C10035FCF6 /* JH_MemoTests.swift */; };
 		7F3E56E8212706C10035FCF6 /* JH_MemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E56E7212706C10035FCF6 /* JH_MemoUITests.swift */; };
+		7F3E56F621270B060035FCF6 /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E56F521270B060035FCF6 /* Save.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F19BB132129BB5D0003D093 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		7F3E56C4212706C00035FCF6 /* JH Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JH Memo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3E56C7212706C00035FCF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F3E56C9212706C00035FCF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F3E56C9212706C00035FCF6 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		7F3E56CC212706C00035FCF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F3E56CE212706C10035FCF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3E56D1212706C10035FCF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		7F3E56E3212706C10035FCF6 /* JH MemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JH MemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3E56E7212706C10035FCF6 /* JH_MemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JH_MemoUITests.swift; sourceTree = "<group>"; };
 		7F3E56E9212706C10035FCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F3E56F521270B060035FCF6 /* Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		7F3E56C6212706C00035FCF6 /* JH Memo */ = {
 			isa = PBXGroup;
 			children = (
-				7F3E56C7212706C00035FCF6 /* AppDelegate.swift */,
-				7F3E56C9212706C00035FCF6 /* ViewController.swift */,
 				7F3E56CB212706C00035FCF6 /* Main.storyboard */,
+				7F3E56C7212706C00035FCF6 /* AppDelegate.swift */,
+				7F3E56C9212706C00035FCF6 /* Main.swift */,
+				7F19BB132129BB5D0003D093 /* MainCell.swift */,
+				7F3E56F521270B060035FCF6 /* Save.swift */,
 				7F3E56CE212706C10035FCF6 /* Assets.xcassets */,
 				7F3E56D0212706C10035FCF6 /* LaunchScreen.storyboard */,
 				7F3E56D3212706C10035FCF6 /* Info.plist */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F3E56CA212706C00035FCF6 /* ViewController.swift in Sources */,
+				7F3E56F621270B060035FCF6 /* Save.swift in Sources */,
+				7F3E56CA212706C00035FCF6 /* Main.swift in Sources */,
+				7F19BB142129BB5D0003D093 /* MainCell.swift in Sources */,
 				7F3E56C8212706C00035FCF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 232AW24CT3;
 				INFOPLIST_FILE = "JH Memo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 232AW24CT3;
 				INFOPLIST_FILE = "JH Memo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
