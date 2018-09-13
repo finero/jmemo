@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// test jmemo
 class Main: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var MemoData = [String]()
