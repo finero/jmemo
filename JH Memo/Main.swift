@@ -7,7 +7,8 @@
 //
 
 import UIKit
-// test jmemo 123123   123123
+// 메모장 생성 및 git 연동 테스트
+// 성공!!!!^^
 class Main: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var MemoData = [String]()
